@@ -16,9 +16,28 @@ namespace COMP1004_W2017_MidTermAssign_200311158
         {
             InitializeComponent();
             _characterPicture();
+            RaceTextBox.Text = _character;
+            JobTextBox.Text = _job;
+            HealthTextBox.Text = _Health.ToString();
+
+            STRTextBox.Text = _STR.ToString();
+            DEXTextBox.Text = _DEX.ToString();
+            INTTextBox.Text = _INT.ToString();
+            ENDTextBox.Text = _END.ToString();
+            PERTextBox.Text = _PER.ToString();
+            CHATextBox.Text = _CHA.ToString();
+
         }
 
         public string _character { get; private set; }
+        public string _job { get; private set; }
+        public int _Health { get; private set; }
+        public int _STR { get; private set; }
+        public int _DEX { get; private set; }
+        public int _INT { get; private set; }
+        public int _END { get; private set; }
+        public int _PER { get; private set; }
+        public int _CHA { get; private set; }
 
         private void _characterPicture ()
         {

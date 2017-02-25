@@ -13,6 +13,7 @@ namespace COMP1004_W2017_MidTermAssign_200311158
     public partial class JobForm : Form
     {
         private int _Health;
+        private string _job;
 
         public JobForm()
         {
@@ -36,18 +37,22 @@ namespace COMP1004_W2017_MidTermAssign_200311158
             if (SoldierRadioButton.Checked)
             {
                 this._Health = 30 + _END;
+                _job = "Soldier";
             }
             else if (RogueRadioButton.Checked)
             {
                 this._Health = 28 + _DEX;
+                _job = "Rogue";
             }
             else if (MagickerRadioButton.Checked)
             {
                 this._Health = 15 + _INT;
+                _job = "Magicker";
             }
             else if (CultistRadioButton.Checked)
             {
                this._Health = 24 + _CHA;
+                _job = "Cultist";
             }
         }
 

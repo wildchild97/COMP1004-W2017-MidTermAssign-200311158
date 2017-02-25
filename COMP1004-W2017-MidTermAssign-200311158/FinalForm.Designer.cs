@@ -282,9 +282,9 @@
             this.groupBox1.Controls.Add(this.HealthLabel);
             this.groupBox1.Controls.Add(this.RaceLabel);
             this.groupBox1.Controls.Add(this.JobLabel);
-            this.groupBox1.Location = new System.Drawing.Point(433, 302);
+            this.groupBox1.Location = new System.Drawing.Point(429, 302);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(196, 100);
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -353,7 +353,7 @@
             this.AbilitiesGroupBox.Controls.Add(this.INTLabel);
             this.AbilitiesGroupBox.Controls.Add(this.DEXLabel);
             this.AbilitiesGroupBox.Controls.Add(this.STRLabel);
-            this.AbilitiesGroupBox.Location = new System.Drawing.Point(353, 27);
+            this.AbilitiesGroupBox.Location = new System.Drawing.Point(429, 27);
             this.AbilitiesGroupBox.Name = "AbilitiesGroupBox";
             this.AbilitiesGroupBox.Size = new System.Drawing.Size(200, 262);
             this.AbilitiesGroupBox.TabIndex = 5;
