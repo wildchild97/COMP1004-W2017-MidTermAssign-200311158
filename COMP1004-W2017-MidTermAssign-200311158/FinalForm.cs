@@ -63,5 +63,6 @@ namespace COMP1004_W2017_MidTermAssign_200311158
         {
             MessageBox.Show("Now Printing your Character");
         }
+
     }
 }
