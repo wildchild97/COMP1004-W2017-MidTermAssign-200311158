@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP1004_W2017_MidTermAssign_200311158;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,12 +10,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP1004_W2017_MidTermAssign_200311158
+//App name: Character Generator
+//Caitlin Foster and Tom Tsiliopoulos       Student	ID: 200311158
+//App Creation Date: February 21, 2017
+
+namespace COMP1004_W2017_MidTermAssgnment_StudentID
 {
     public partial class AbilityForm : Form
     {
+        public Form PreviousForm;
         // Random Number object
         Random random = new Random();
+
+        private int _STR;
+        private int _DEX;
+        private int _END;
+        private int _INT;
+        private int _PER;
+        private int _CHA;
 
         public AbilityForm()
         {
@@ -39,8 +52,32 @@ namespace COMP1004_W2017_MidTermAssign_200311158
 
         private void RollButton_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine(Roll3D10().ToString());
+            this._STR = Roll3D10();
+            this._DEX = Roll3D10();
+            this._END = Roll3D10();
+            this._INT = Roll3D10();
+            this._PER = Roll3D10();
+            this._CHA = Roll3D10();
+
+            STRTextBox.Text = _STR.ToString();
+            DEXTextBox.Text = _DEX.ToString();
+            ENDTextBox.Text = _END.ToString();
+            INTTextBox.Text = _INT.ToString();
+            PERTextBox.Text = _PER.ToString();
+            CHATextBox.Text = _CHA.ToString();    
         }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            // Instantiate the next form
+            RaceForm raceForm = new RaceForm();
+
+            // pass a reference from the current form to the next form
+            raceForm.PreviousForm = this;
+            
+            raceForm.Show();
+            this.Hide();
+        }
     }
 }
+
