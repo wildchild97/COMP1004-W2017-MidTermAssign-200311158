@@ -8,19 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//App name: Character Generator
+//Caitlin Foster and Tom Tsiliopoulos       Student	ID: 200311158
+//App Creation Date: February 21, 2017
+
 namespace COMP1004_W2017_MidTermAssign_200311158
 {
     public partial class JobForm : Form
     {
+        //PRIVATE VARIABLES++++++++++++++++
         private int _Health;
         private string _job;
 
+        //Constructors++++++++++++++++++++++
         public JobForm()
         {
             InitializeComponent();
         }
 
-        // public properties
+        //PUBLIC PROPERTIES++++++++++++++++++
 
         public JobForm PreviousForm { get; set; }
         public int _STR { get; private set; }
@@ -32,6 +38,13 @@ namespace COMP1004_W2017_MidTermAssign_200311158
 
         public string _character { get; private set; }
 
+        //PRIVATE METHODS+++++++++++++++++++++
+
+        /// <summary>
+        /// this method changes the characters stats based of which job the user chose
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _jobRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (SoldierRadioButton.Checked)
@@ -56,6 +69,11 @@ namespace COMP1004_W2017_MidTermAssign_200311158
             }
         }
 
+        /// <summary>
+        /// this method moves to the next form when the next button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             // Instantiate the next form

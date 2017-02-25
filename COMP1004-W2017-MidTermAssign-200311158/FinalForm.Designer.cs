@@ -50,7 +50,7 @@
             this.HeightLabel = new System.Windows.Forms.Label();
             this.AgeLabel = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.InfoGroupBox = new System.Windows.Forms.GroupBox();
             this.HealthTextBox = new System.Windows.Forms.TextBox();
             this.RaceTextBox = new System.Windows.Forms.TextBox();
             this.JobTextBox = new System.Windows.Forms.TextBox();
@@ -73,7 +73,7 @@
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).BeginInit();
             this.CharacterInfoGroupBox.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.InfoGroupBox.SuspendLayout();
             this.AbilitiesGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -274,19 +274,19 @@
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name:";
             // 
-            // groupBox1
+            // InfoGroupBox
             // 
-            this.groupBox1.Controls.Add(this.HealthTextBox);
-            this.groupBox1.Controls.Add(this.RaceTextBox);
-            this.groupBox1.Controls.Add(this.JobTextBox);
-            this.groupBox1.Controls.Add(this.HealthLabel);
-            this.groupBox1.Controls.Add(this.RaceLabel);
-            this.groupBox1.Controls.Add(this.JobLabel);
-            this.groupBox1.Location = new System.Drawing.Point(429, 302);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
+            this.InfoGroupBox.Controls.Add(this.HealthTextBox);
+            this.InfoGroupBox.Controls.Add(this.RaceTextBox);
+            this.InfoGroupBox.Controls.Add(this.JobTextBox);
+            this.InfoGroupBox.Controls.Add(this.HealthLabel);
+            this.InfoGroupBox.Controls.Add(this.RaceLabel);
+            this.InfoGroupBox.Controls.Add(this.JobLabel);
+            this.InfoGroupBox.Location = new System.Drawing.Point(429, 302);
+            this.InfoGroupBox.Name = "InfoGroupBox";
+            this.InfoGroupBox.Size = new System.Drawing.Size(200, 100);
+            this.InfoGroupBox.TabIndex = 4;
+            this.InfoGroupBox.TabStop = false;
             // 
             // HealthTextBox
             // 
@@ -473,7 +473,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(641, 469);
             this.Controls.Add(this.AbilitiesGroupBox);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.InfoGroupBox);
             this.Controls.Add(this.CharacterInfoGroupBox);
             this.Controls.Add(this.CharacterPictureBox);
             this.Controls.Add(this.ExitButton);
@@ -488,8 +488,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).EndInit();
             this.CharacterInfoGroupBox.ResumeLayout(false);
             this.CharacterInfoGroupBox.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.InfoGroupBox.ResumeLayout(false);
+            this.InfoGroupBox.PerformLayout();
             this.AbilitiesGroupBox.ResumeLayout(false);
             this.AbilitiesGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -521,7 +521,7 @@
         private System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TextBox TitleTextBox;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox InfoGroupBox;
         private System.Windows.Forms.Label JobLabel;
         private System.Windows.Forms.Label RaceLabel;
         private System.Windows.Forms.Label HealthLabel;

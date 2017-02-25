@@ -22,6 +22,7 @@ namespace COMP1004_W2017_MidTermAssgnment_StudentID
         // Random Number object
         Random random = new Random();
 
+        //PRIVATE VARIABLES++++++++++++++++
         private int _STR;
         private int _DEX;
         private int _END;
@@ -29,10 +30,13 @@ namespace COMP1004_W2017_MidTermAssgnment_StudentID
         private int _PER;
         private int _CHA;
 
+        //Constructors++++++++++++++++++++++
         public AbilityForm()
         {
             InitializeComponent();
         }
+
+        //PRIVATE METHODS+++++++++++++++++++++
 
         /// <summary>
         /// This method simulates the rolling of three 10-sided dice
@@ -50,6 +54,11 @@ namespace COMP1004_W2017_MidTermAssgnment_StudentID
             return result;
         }
 
+        /// <summary>
+        /// this method assigns the character's abilities random stats and display's them
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RollButton_Click(object sender, EventArgs e)
         {
             this._STR = Roll3D10();
@@ -67,6 +76,11 @@ namespace COMP1004_W2017_MidTermAssgnment_StudentID
             CHATextBox.Text = _CHA.ToString();    
         }
 
+        /// <summary>
+        /// this method goes to the next page when next button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             // Instantiate the next form

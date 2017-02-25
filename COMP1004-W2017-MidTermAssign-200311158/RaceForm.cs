@@ -10,12 +10,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//App name: Character Generator
+//Caitlin Foster and Tom Tsiliopoulos       Student	ID: 200311158
+//App Creation Date: February 21, 2017
+
 namespace COMP1004_W2017_MidTermAssign_200311158
 {
     public partial class RaceForm : Form
     {
+        //PRIVATE VARIABLES++++++++++++++++
         private string _character;
 
+        //Constructors++++++++++++++++++++++
         public RaceForm()
         {
             InitializeComponent();
@@ -23,7 +29,7 @@ namespace COMP1004_W2017_MidTermAssign_200311158
             RacialBonusTextBox.Text = "All Stats increased by 5 points";
         }
 
-        //public properties
+        //PUBLIC PROPERTIES++++++++++++++++++
         public AbilityForm PreviousForm { get; set; }
 
         public int _STR { get; private set; }
@@ -33,6 +39,13 @@ namespace COMP1004_W2017_MidTermAssign_200311158
         public int _PER { get; private set; }
         public int _CHA { get; private set; }
 
+        //PRIVATE METHODS+++++++++++++++++++++
+
+        /// <summary>
+        /// this method changes the character picture when a diffrent race is selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _raceRadioButton_CheckedChanged(object sender, EventArgs e)
         { 
             
@@ -59,6 +72,11 @@ namespace COMP1004_W2017_MidTermAssign_200311158
 
         }
 
+        /// <summary>
+        /// this method changes the characters stats based off which character race they chose then moves to the next page when the next button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _nextButton_Click(object sender, EventArgs e)
         {
             if (HumanRadioButton.Checked)
